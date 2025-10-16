@@ -32,23 +32,6 @@
 			::-webkit-scrollbar-thumb {
 				background-color:  rgba(255,255,255,0.5);
 			}
-
-			/* --- СТИЛЬ ДЛЯ ПОДПИСИ (ОСТАЕТСЯ БЕЗ ИЗМЕНЕНИЙ) --- */
-			.signature {
-				position: fixed;
-				bottom: 15px;
-				right: 15px;
-				padding: 8px 15px;
-				background-color: rgba(0, 0, 0, 0.5);
-				color: white;
-				border-radius: 10px;
-				font-family: Arial, sans-serif;
-				font-size: 14px;
-				z-index: 9999;
-				pointer-events: none; /* Чтобы подпись не мешала управлению панорамой */
-			}
-			/* --- КОНЕЦ СТИЛЯ --- */
-
 		</style>
 	</head>
 	<body>
@@ -104,25 +87,7 @@
 			pano=new pano2vrPlayer("container");
 			pano.startNode = startNode;
 			pano.startView = startView;
-			pano.setQueryParameter("ts=20979508");
-
-			// --- НОВЫЙ КОД ДЛЯ ДОБАВЛЕНИЯ ПОДПИСИ ---
-			// Добавляем "слушателя" события: когда конфигурация плеера загрузится...
-			pano.addEventListener('configloaded', function() {
-			  // 1. Создаем новый элемент div
-			  var signatureDiv = document.createElement('div');
-
-			  // 2. Присваиваем ему наш класс стилей
-			  signatureDiv.className = 'signature';
-
-			  // 3. Добавляем в него текст (ваши ФИО)
-			  signatureDiv.innerHTML = 'Королев В. С.';
-
-			  // 4. Добавляем созданный элемент прямо в `body` документа
-			  document.body.appendChild(signatureDiv);
-			});
-			// --- КОНЕЦ НОВОГО КОДА ---
-
+			pano.setQueryParameter("ts=20979508")
 			// load the configuration
 			window.addEventListener("load", function() {
 				pano.readConfigUrlAsync("pano.xml?ts=20979508");
