@@ -33,20 +33,21 @@
 				background-color:  rgba(255,255,255,0.5);
 			}
 
-			/* --- ДОБАВЛЕННЫЙ СТИЛЬ ДЛЯ ПОДПИСИ --- */
+			/* --- СТИЛЬ ДЛЯ ПОДПИСИ (ОСТАЕТСЯ БЕЗ ИЗМЕНЕНИЙ) --- */
 			.signature {
-				position: fixed; /* Фиксированное положение относительно окна браузера */
-				bottom: 15px;    /* 15px от нижнего края */
-				right: 15px;     /* 15px от правого края */
-				padding: 8px 15px; /* Внутренние отступы (сверху/снизу и справа/слева) */
-				background-color: rgba(0, 0, 0, 0.5); /* Черный фон с 50% прозрачностью */
-				color: white;    /* Белый цвет текста */
-				border-radius: 10px; /* Скругление углов */
-				font-family: Arial, sans-serif; /* Шрифт */
-				font-size: 14px; /* Размер шрифта */
-				z-index: 9999;   /* Отображение поверх других элементов */
+				position: fixed;
+				bottom: 15px;
+				right: 15px;
+				padding: 8px 15px;
+				background-color: rgba(0, 0, 0, 0.5);
+				color: white;
+				border-radius: 10px;
+				font-family: Arial, sans-serif;
+				font-size: 14px;
+				z-index: 9999;
+				pointer-events: none; /* Чтобы подпись не мешала управлению панорамой */
 			}
-			/* --- КОНЕЦ ДОБАВЛЕННОГО СТИЛЯ --- */
+			/* --- КОНЕЦ СТИЛЯ --- */
 
 		</style>
 	</head>
@@ -103,7 +104,25 @@
 			pano=new pano2vrPlayer("container");
 			pano.startNode = startNode;
 			pano.startView = startView;
-			pano.setQueryParameter("ts=20979508")
+			pano.setQueryParameter("ts=20979508");
+
+			// --- НОВЫЙ КОД ДЛЯ ДОБАВЛЕНИЯ ПОДПИСИ ---
+			// Добавляем "слушателя" события: когда конфигурация плеера загрузится...
+			pano.addEventListener('configloaded', function() {
+			  // 1. Создаем новый элемент div
+			  var signatureDiv = document.createElement('div');
+
+			  // 2. Присваиваем ему наш класс стилей
+			  signatureDiv.className = 'signature';
+
+			  // 3. Добавляем в него текст (ваши ФИО)
+			  signatureDiv.innerHTML = 'Королев В. С.';
+
+			  // 4. Добавляем созданный элемент прямо в `body` документа
+			  document.body.appendChild(signatureDiv);
+			});
+			// --- КОНЕЦ НОВОГО КОДА ---
+
 			// load the configuration
 			window.addEventListener("load", function() {
 				pano.readConfigUrlAsync("pano.xml?ts=20979508");
@@ -138,10 +157,5 @@
 			<p><b>Please enable Javascript!</b></p>
 		</noscript>
 <!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - -->
-
-		<!-- --- ДОБАВЛЕННЫЙ HTML-ЭЛЕМЕНТ ПОДПИСИ --- -->
-		<div class="signature">Королев В. С.</div>
-		<!-- --- КОНЕЦ ДОБАВЛЕННОГО ЭЛЕМЕНТА --- -->
-
 	</body>
 </html>
