@@ -1,104 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tour appversion="7.1.11" hassounds="1" start="node5" apprev="21010">
-  <panorama id="node5">
-    <input levelingpitch="-2" width="1344" levelbias="0.400" height="1344" levelingroll="-3.3999999999999999" leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510" overlap="1" levelbiashidpi="1.000">
-      <level predecode="0" width="1344" preload="0" height="1344"/>
-      <level predecode="0" width="672" preload="0" height="672"/>
-      <level predecode="1" width="336" preload="1" height="336"/>
+<tour start="node1" apprev="21010" hassounds="1" appversion="7.1.11">
+  <panorama id="node1">
+    <input leveltilesize="510" overlap="1" levelbiashidpi="1.000" levelingpitch="-2" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" width="1344" levelingroll="-3.3999999999999999" height="1344">
+      <level width="1344" preload="0" predecode="0" height="1344"/>
+      <level width="672" preload="0" predecode="0" height="672"/>
+      <level width="336" preload="1" predecode="1" height="336"/>
       <preview strip="1" color="0x808080"/>
     </input>
-    <view pannorth="157.5" fovmode="2">
-      <start pan="0" tilt="0" projection="4" fov="100"/>
-      <flyin pan="0" tilt="-90" projection="9" fov="170"/>
-      <min pan="0" tilt="-90" fovpixel="2"/>
-      <max scaletofit="1" fovfisheye="360" fovstereographic="330" pan="360" tilt="90" fov="140"/>
+    <view fovmode="2" pannorth="157.5">
+      <start tilt="0" projection="4" pan="0" fov="100"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max fovfisheye="360" scaletofit="1" tilt="90" pan="360" fov="140" fovstereographic="330"/>
     </view>
-    <userdata description="" comment="" longitude="30.295192" copyright="" latitude="59.929694" heading="157.5" tags="" nodeid="node5" author="" altitude="11.73" customnodeid="" info="" title="" datetime="14.10.2025 17:50" source=""/>
-    <hotspots width="180" wordwrap="1" smoothmovement="0" height="20">
-      <label borderalpha="1" enabled="1" width="180" bordercolor="0x000000" height="20" backgroundcolor="0xffffff" textalpha="1" border="1" textcolor="0x000000" wordwrap="1" borderradius="1" background="1" backgroundalpha="1"/>
-      <polystyle backgroundcolor="0x0000ff" borderalpha="1" handcursor="1" bordercolor="0x0000ff" mode="0" backgroundalpha="0.25098"/>
-      <polyhotspot description="" url="{node6}" title="Переход в тронный зал" target="Вперед" id="vlad1">
-        <polystring>-330.31/30.95|-330.78/32.32|-334.52/34.97|-339.63/37.44|-338.3/40.11|-334.41/47.5|-338.23/51.27|-344.53/51.31|-348.51/49.45|-349.58/45.68|-350.86/45.98|-350.68/42.8|-349.26/42.74|-349.2/41.19|-353.74/40.42|-352.92/38.84|-355.12/37.94|-355.12/36.75|-1.52/36.18|-4.33/30.44|-6.8/15.82|-13.59/12.57|-15.14/-14.06|-16.3/-18.14|-12.96/-18.79|-13.63/-23.87|-22.32/-34.29|-15.43/-36|-9.31/-33.17|-7.69/-25.39|-1.68/3.95|-356.38/1.64|-347.54/1.81|-346.46/-1.77|-341.44/-2.69|-339.8/2.98|-334.77/0.71|-327.54/-1.29|-323.99/-15.66|-324.41/-26.17|-314.75/-30.25|-311.26/-28.72|-311.32/-25.87|-315.96/-20.69|-318.46/-14.7|-312.74/-13.08|-317.77/10.65|-324.75/13.59|-325.79/22.15</polystring>
-      </polyhotspot>
-      <polyhotspot description="" url="" title="Спортсмен" target="_blank" id="Poly01">
-        <polystring>-100.75/-52.21|-89.15/-55.69|-53.77/-47.13|-53.45/-42.04|-74.5/-41.05|-78.67/-34.78|-74.27/-30.73|-79.23/-25.62|-85.14/-5.97|-101.18/-8.25|-105.11/5.43|-118.03/9.72|-121.98/11.13|-122.14/21.08|-126.89/24.38|-136.06/21.85|-136.35/17.93|-133.91/12.26|-130.57/6.46|-135.83/0.61|-133.17/-16.64|-130.93/-24.58|-136.35/-33.75|-134.21/-41.04|-110.86/-38.48|-93.94/-37.78</polystring>
+    <userdata author="" source="" datetime="14.10.2025 17:50" info="" comment="" tags="Desktop" altitude="11.73" description="" customnodeid="" latitude="59.92987141" copyright="" heading="157.5" longitude="30.29475212" nodeid="node1" title=""/>
+    <hotspots width="180" smoothmovement="0" wordwrap="1" height="20">
+      <label backgroundalpha="1" borderalpha="1" borderradius="1" textcolor="0x000000" enabled="1" width="180" backgroundcolor="0xffffff" background="1" bordercolor="0x000000" textalpha="1" border="1" wordwrap="1" height="20"/>
+      <polystyle backgroundalpha="0.25098" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1" handcursor="1"/>
+      <polyhotspot id="Poly01" url="{node2}" target="" description="Переход в тронный зал&#xa;" title="Переход в тронный зал">
+        <polystring>-324.62/-26.05|-310.94/-30.86|-306.76/-28.45|-316.46/-20.34|-316.4/10.62|-323.96/14.06|-331.06/33.53|-339.4/36.56|-332.03/49.14|-348.51/52.43|-351.02/39.09|-4.71/35.45|-6.22/16.77|-14.93/11.87|-23.78/-35.41|-6.68/-31.32|-1.68/-1.33|-351.77/3.73|-345.47/-3.74|-336.55/3.07|-328.01/-1.29</polystring>
       </polyhotspot>
     </hotspots>
     <media>
-      <sound tiltsize="10.000" level="0.300" ambientlevel="0.000" nodechangekeep="1" tilt="-1.000" field="90.000" loop="1" pan="-1.000" mode="0" id="_background" pansize="10.000" startmutedmobile="0">
+      <sound tilt="-1.000" startmutedmobile="0" nodechangekeep="1" ambientlevel="0.000" tiltsize="10.000" loop="1" id="_background" field="90.000" level="1.000" mode="0" pansize="10.000" pan="-1.000">
+        <source mono="0" url="media/ssshhhiiittt - .mp3"/>
         <source mono="0" url="media/Boa_-_Duvet_SkySound.cc.mp3"/>
       </sound>
     </media>
-    <transition zoomin="0" enabled="1" zoomspeed="2" delay="none" zoomfov="40" zoomafterinfov="140" softedge="0" blendtime="1" zoomoutpause="1" blendcolor="0x000000" zoomout="0" type="crossdissolve" zoomafteroutfov="40"/>
-    <animation useinautorotation="0" clipsrandom="0" animsequence="Animation01" syncanimationwithvideo="0"/>
-    <control invertwheel="0" rubberband="0" zoomcentercursor="1" simulatemass="1" lockedmouse="0" lockedkeyboardzoom="0" lockedwheel="0" contextfullscreen="1" lockedkeyboard="0" contextvr="1" dblclickfullscreen="0" hideabout="0" sensitivity="8" invertcontrol="1" speedwheel="1" contextprojections="0"/>
+    <transition softedge="0" blendcolor="0x000000" type="crossdissolve" zoomafterinfov="140" zoomafteroutfov="40" zoomout="0" blendtime="1" zoomspeed="2" enabled="1" zoomfov="40" zoomin="0" delay="none" zoomoutpause="1"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control simulatemass="1" invertcontrol="1" contextvr="1" dblclickfullscreen="0" invertwheel="0" contextfullscreen="1" rubberband="0" lockedkeyboard="0" zoomcentercursor="1" sensitivity="8" lockedkeyboardzoom="0" hideabout="0" lockedmouse="0" lockedwheel="0" speedwheel="1" contextprojections="0"/>
   </panorama>
-  <panorama id="node6">
-    <input levelingpitch="-2.1000000000000001" width="1344" levelbias="0.400" height="1344" levelingroll="-2.7000000000000002" leveltileurl="tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510" overlap="1" levelbiashidpi="1.000">
-      <level predecode="0" width="1344" preload="0" height="1344"/>
-      <level predecode="0" width="672" preload="0" height="672"/>
-      <level predecode="1" width="336" preload="1" height="336"/>
+  <panorama id="node2">
+    <input leveltilesize="510" overlap="1" levelbiashidpi="1.000" levelingpitch="-2.1000000000000001" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" width="1344" levelingroll="-2.7000000000000002" height="1344">
+      <level width="1344" preload="0" predecode="0" height="1344"/>
+      <level width="672" preload="0" predecode="0" height="672"/>
+      <level width="336" preload="1" predecode="1" height="336"/>
       <preview strip="1" color="0x808080"/>
     </input>
-    <view pannorth="0" fovmode="2">
-      <start pan="0" tilt="0" projection="4" fov="100"/>
-      <flyin pan="0" tilt="-90" projection="9" fov="170"/>
-      <min pan="0" tilt="-90" fovpixel="2"/>
-      <max scaletofit="1" fovfisheye="360" fovstereographic="330" pan="360" tilt="90" fov="140"/>
+    <view fovmode="2" pannorth="0">
+      <start tilt="0" projection="4" pan="0" fov="100"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max fovfisheye="360" scaletofit="1" tilt="90" pan="360" fov="140" fovstereographic="330"/>
     </view>
-    <userdata description="" comment="" longitude="30.295400" copyright="" latitude="59.928889" heading="0" tags="" nodeid="node6" author="" altitude="6.22" customnodeid="" info="" title="" datetime="14.10.2025 17:55" source=""/>
-    <hotspots width="180" wordwrap="1" smoothmovement="0" height="20">
-      <label borderalpha="1" enabled="1" width="180" bordercolor="0x000000" height="20" backgroundcolor="0xffffff" textalpha="1" border="1" textcolor="0x000000" wordwrap="1" borderradius="1" background="1" backgroundalpha="1"/>
-      <polystyle backgroundcolor="0x0000ff" borderalpha="1" handcursor="1" bordercolor="0x0000ff" mode="0" backgroundalpha="0.25098"/>
-      <polyhotspot description="" url="{node7}" title="К месту преступления" target="$fwd" id="Poly01">
-        <polystring>-347.59/4.62|-347.25/5.61|-353.82/10.05|-5.16/12.03|-5.15/10.36|-359.99/6.38|-360/-3.09|-1.47/-3.65|-1.69/-4.1|-356.1/-4.59|-351.69/-3.83|-352.07/-3.45|-353.68/-2.79|-353.57/5.04</polystring>
+    <userdata author="" source="" datetime="14.10.2025 17:55" info="" comment="" tags="Desktop" altitude="6.22" description="" customnodeid="" latitude="59.928889" copyright="" heading="0" longitude="30.295400" nodeid="node2" title=""/>
+    <hotspots width="180" smoothmovement="0" wordwrap="1" height="20">
+      <label backgroundalpha="1" borderalpha="1" borderradius="1" textcolor="0x000000" enabled="1" width="180" backgroundcolor="0xffffff" background="1" bordercolor="0x000000" textalpha="1" border="1" wordwrap="1" height="20"/>
+      <polystyle backgroundalpha="0.25098" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1" handcursor="1"/>
+      <polyhotspot id="Poly01" url="" target="_blank" description="Дэб" title="Дэб">
+        <polystring>-59.86/27.31|-67.38/-10.01|-132.57/-12.39|-130.98/29.34</polystring>
       </polyhotspot>
-      <polyhotspot description="" url="" title="Дэб" target="_blank" id="Poly02">
-        <polystring>-58.43/30.05|-66.47/-12.56|-131.39/-11.2|-135.61/24.26</polystring>
+      <polyhotspot id="Poly02" url="" target="_blank" description="Не такой как все" title="Не такой как все">
+        <polystring>-179.42/21.26|-196.55/20.92|-197.96/-9.42|-177.91/-9.17</polystring>
       </polyhotspot>
-      <polyhotspot description="" url="" title="Не такой как все" target="_blank" id="Poly03">
-        <polystring>-187.25/17.4|-187.71/15.64|-188.76/15.8|-189.28/15.02|-191.68/13.08|-192.05/7.54|-191.23/6.37|-191.15/3.57|-190.05/3.13|-189.91/-0.02|-190.56/-0.02|-190.79/-3.79|-189.26/-3.72|-189.19/-6.92|-187.96/-7.26|-187.97/-8.24|-185.17/-8.83|-186.99/-1.98|-183.63/0.56|-184.64/8.89|-183.15/10.45|-184.31/12.21|-185.03/14.17|-184.19/16.55</polystring>
+      <polyhotspot id="Poly03" url="{node3}" target="" description="Переход к месту преступления" title="Переход к месту преступления">
+        <polystring>-353.73/10.26|-347.87/5.89|-357.73/6.31|-4.5/11.6</polystring>
       </polyhotspot>
     </hotspots>
-    <media/>
-    <transition zoomin="0" enabled="1" zoomspeed="2" delay="none" zoomfov="40" zoomafterinfov="140" softedge="0" blendtime="1" zoomoutpause="1" blendcolor="0x000000" zoomout="0" type="crossdissolve" zoomafteroutfov="40"/>
-    <animation useinautorotation="0" clipsrandom="0" animsequence="Animation01" syncanimationwithvideo="0"/>
-    <control invertwheel="0" rubberband="0" zoomcentercursor="1" simulatemass="1" lockedmouse="0" lockedkeyboardzoom="0" lockedwheel="0" contextfullscreen="1" lockedkeyboard="0" contextvr="1" dblclickfullscreen="0" hideabout="0" sensitivity="8" invertcontrol="1" speedwheel="1" contextprojections="0"/>
+    <media>
+      <image handcursor="0" tilt="94.138" fov="78.371" popoutscaling="100" id="Element01" popbackmode="0" width="5376" clickmode="0" rotx="4.140" roty="4.268" pan="-5.471" stretch="2.000" hidepinned="0" rotz="46.300" height="2688">
+        <source url="media/R0010714.jpg"/>
+      </image>
+      <sound tilt="-1.000" startmutedmobile="0" nodechangekeep="1" ambientlevel="0.000" tiltsize="10.000" loop="1" id="_background" field="90.000" level="1.000" mode="0" pansize="10.000" pan="-1.000">
+        <source mono="0" url="media/ssshhhiiittt - .mp3"/>
+      </sound>
+    </media>
+    <transition softedge="0" blendcolor="0x000000" type="crossdissolve" zoomafterinfov="140" zoomafteroutfov="40" zoomout="0" blendtime="1" zoomspeed="2" enabled="1" zoomfov="40" zoomin="0" delay="none" zoomoutpause="1"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control simulatemass="1" invertcontrol="1" contextvr="1" dblclickfullscreen="0" invertwheel="0" contextfullscreen="1" rubberband="0" lockedkeyboard="0" zoomcentercursor="1" sensitivity="8" lockedkeyboardzoom="0" hideabout="0" lockedmouse="0" lockedwheel="0" speedwheel="1" contextprojections="0"/>
   </panorama>
-  <panorama id="node7">
-    <input levelingpitch="-0.5" width="1344" levelbias="0.400" height="1344" levelingroll="4.0999999999999996" leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510" overlap="1" levelbiashidpi="1.000">
-      <level predecode="0" width="1344" preload="0" height="1344"/>
-      <level predecode="0" width="672" preload="0" height="672"/>
-      <level predecode="1" width="336" preload="1" height="336"/>
+  <panorama id="node3">
+    <input leveltilesize="510" overlap="1" levelbiashidpi="1.000" levelingpitch="-0.5" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" width="1344" levelingroll="4.0999999999999996" height="1344">
+      <level width="1344" preload="0" predecode="0" height="1344"/>
+      <level width="672" preload="0" predecode="0" height="672"/>
+      <level width="336" preload="1" predecode="1" height="336"/>
       <preview strip="1" color="0x808080"/>
     </input>
-    <view pannorth="112.5" fovmode="2">
-      <start pan="0" tilt="0" projection="4" fov="100"/>
-      <flyin pan="0" tilt="-90" projection="9" fov="170"/>
-      <min pan="0" tilt="-90" fovpixel="2"/>
-      <max scaletofit="1" fovfisheye="360" fovstereographic="330" pan="360" tilt="90" fov="140"/>
+    <view fovmode="2" pannorth="112.5">
+      <start tilt="0" projection="4" pan="0" fov="100"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max fovfisheye="360" scaletofit="1" tilt="90" pan="360" fov="140" fovstereographic="330"/>
     </view>
-    <userdata description="" comment="" longitude="30.295306" copyright="" latitude="59.928872" heading="112.5" tags="" nodeid="node7" author="" altitude="11.92" customnodeid="" info="" title="" datetime="14.10.2025 17:59" source=""/>
-    <hotspots width="180" wordwrap="1" smoothmovement="0" height="20">
-      <label borderalpha="1" enabled="1" width="180" bordercolor="0x000000" height="20" backgroundcolor="0xffffff" textalpha="1" border="1" textcolor="0x000000" wordwrap="1" borderradius="1" background="1" backgroundalpha="1"/>
-      <polystyle backgroundcolor="0x0000ff" borderalpha="1" handcursor="1" bordercolor="0x0000ff" mode="0" backgroundalpha="0.25098"/>
-      <polyhotspot description="" url="{node5}" title="В начало" target="$fwd" id="Poly01">
-        <polystring>-44.08/-21.65|-50.97/-27.07|-60.62/-26.35|-66.63/-20.42|-67.06/-17.07|-69.32/-15.82|-69.42/-13.87|-70.93/-8.8|-70.83/-6.31|-71.76/-4.51|-70.49/2.69|-68.82/7.38|-66.41/8.85|-64.95/11.6|-60.54/12.64|-58.71/15.02|-54.94/12.97|-50.89/14.53|-44.45/11.08|-39.63/5.53|-38.59/-0.85|-39.03/-5.69|-36.09/-6.73|-38.9/-12.01|-40.13/-15.74|-42.03/-16.37</polystring>
+    <userdata author="" source="" datetime="14.10.2025 17:59" info="" comment="" tags="Desktop" altitude="11.92" description="" customnodeid="" latitude="59.928872" copyright="" heading="112.5" longitude="30.295306" nodeid="node3" title=""/>
+    <hotspots width="180" smoothmovement="0" wordwrap="1" height="20">
+      <label backgroundalpha="1" borderalpha="1" borderradius="1" textcolor="0x000000" enabled="1" width="180" backgroundcolor="0xffffff" background="1" bordercolor="0x000000" textalpha="1" border="1" wordwrap="1" height="20"/>
+      <polystyle backgroundalpha="0.25098" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1" handcursor="1"/>
+      <polyhotspot id="Poly01" url="" target="_blank" description="Драка страшная" title="Драка страшная">
+        <polystring>-175.81/-54.88|-229.12/-54.32|-218.06/8.29|-184.38/6.18</polystring>
       </polyhotspot>
-      <polyhotspot description="" url="https://youtu.be/oyE6NnmBUIE" title="Youtube" target="_blank" id="Poly02">
-        <polystring>-116.03/29.59|-116.09/-3.11|-122.57/-6.01|-129.34/-6.5|-137.06/-5.73|-142.32/-2.68|-142.11/28.82|-139.03/30.05|-139.23/40.3|-132.21/40.18|-135.48/42.64|-134.56/45.72|-131.17/47.32|-126.69/46.93|-123.65/44.98|-124.82/42.07|-129.09/40.33|-120.53/41.22|-120.59/30.89</polystring>
+      <polyhotspot id="Poly02" url="" target="_blank" description="Болельщицы" title="Болельщицы">
+        <polystring>-305.37/-3.23|-307.9/-44.03|-341.67/-49.91|-334.31/-3.49</polystring>
       </polyhotspot>
-      <polyhotspot description="" url="" title="Драка страшная" target="_blank" id="Poly03">
-        <polystring>-181.92/-57.52|-225.73/-55.77|-218.36/8.7|-182.2/6.2</polystring>
+      <polyhotspot id="Poly03" url="https://www.youtube.com/watch?v=anC94SKVZ7E" target="_blank" description="Видео" title="Видео">
+        <polystring>-119.87/40.93|-120.64/31.68|-116.7/29.91|-116.59/-3.14|-129.55/-6.74|-141.81/-2.69|-141.84/28.63|-139.12/29.76|-138.79/40.23|-134.02/41.27|-136.62/43.98|-133.68/47.15|-125.98/47.41|-122.97/44.9|-125.72/41.14</polystring>
+      </polyhotspot>
+      <polyhotspot id="Poly04" url="{node1}" target="" description="Переход в начало" title="Переход в начало">
+        <polystring>-48.69/13.63|-37.74/-0.59|-45.22/-23.13|-56.08/-27.42|-66.56/-20.91|-71.37/0.05|-65.97/12.42</polystring>
       </polyhotspot>
     </hotspots>
-    <media/>
-    <transition zoomin="0" enabled="1" zoomspeed="2" delay="none" zoomfov="40" zoomafterinfov="140" softedge="0" blendtime="1" zoomoutpause="1" blendcolor="0x000000" zoomout="0" type="crossdissolve" zoomafteroutfov="40"/>
-    <animation useinautorotation="0" clipsrandom="0" animsequence="Animation01" syncanimationwithvideo="0"/>
-    <control invertwheel="0" rubberband="0" zoomcentercursor="1" simulatemass="1" lockedmouse="0" lockedkeyboardzoom="0" lockedwheel="0" contextfullscreen="1" lockedkeyboard="0" contextvr="1" dblclickfullscreen="0" hideabout="0" sensitivity="8" invertcontrol="1" speedwheel="1" contextprojections="0"/>
+    <media>
+      <sound tilt="-53.810" startmutedmobile="0" nodechangekeep="0" ambientlevel="0.000" tiltsize="10.000" loop="1" id="Element01" field="90.000" level="1.000" mode="3" pansize="10.000" pan="-54.160">
+        <source mono="0" url="media/dota-2-game-ready-sound-youtube1.mp3"/>
+      </sound>
+    </media>
+    <transition softedge="0" blendcolor="0x000000" type="crossdissolve" zoomafterinfov="140" zoomafteroutfov="40" zoomout="0" blendtime="1" zoomspeed="2" enabled="1" zoomfov="40" zoomin="0" delay="none" zoomoutpause="1"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control simulatemass="1" invertcontrol="1" contextvr="1" dblclickfullscreen="0" invertwheel="0" contextfullscreen="1" rubberband="0" lockedkeyboard="0" zoomcentercursor="1" sensitivity="8" lockedkeyboardzoom="0" hideabout="0" lockedmouse="0" lockedwheel="0" speedwheel="1" contextprojections="0"/>
   </panorama>
   <masternode>
-    <userdata description="" comment="" author="" copyright="" title="" tags=""/>
+    <userdata author="" copyright="" comment="" tags="" description="" title=""/>
     <animationsequences>
       <sequence title="Animation01"/>
     </animationsequences>
